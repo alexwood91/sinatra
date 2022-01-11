@@ -11,7 +11,6 @@ get '/secret' do
 end
 
 get '/cat' do
-  "<div>
-    <img src='https://i.imgur.com/jFaSxym.png'>  
-  </div>"
+  @name = ["Amigo", "Misty", "Almond"].sample
+  erb(:index)
 end
